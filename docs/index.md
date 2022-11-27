@@ -4,6 +4,6 @@
 
 개발하는 분야는 다음과 같습니다:
 
-- Android
-- Spring
-- Spring Boot
+- [Android](./android/)
+- [Kotlin](./kotlin/)
+- [Spring Boot](./spring-boot/)
