@@ -2,8 +2,7 @@ site_name: 주진현의 스냅샷
 site_url: https://jinhyun.blog/
 site_author: 주진현
 site_description: >-
-  Create a branded static site from a set of Markdown files to host the
-  documentation of your Open Source or commercial project
+  나의 학습 기록 공유
 
 # Repository
 repo_name: harryjhin/blog
@@ -11,6 +10,7 @@ repo_url: https://github.com/harryjhin/blog
 
 # Configuration
 theme:
+  language: kr
   name: material
   custom_dir: overrides
   features:
@@ -49,9 +49,9 @@ theme:
   font:
     text: Nanum Gothic
     code: JetBrains Mono
-  favicon: assets/favicon.png
+  favicon: images/logo.png
   icon:
-    logo: logo
+    logo: material/library
 
 # Plugins
 plugins:
@@ -73,20 +73,12 @@ extra:
         - icon: material/emoticon-sad-outline
           name: This page could be improved
           data: 0
-          note: >- 
+          note: >-
             Thanks for your feedback! Help us improve this page by
             using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/harryjhin
-    # - icon: fontawesome/brands/gitter
-    #   link: https://gitter.im/harryjhin/blog
-    # - icon: fontawesome/brands/docker
-    #   link: https://hub.docker.com/r/squidfunk/mkdocs-material/
-    # - icon: fontawesome/brands/python
-    #   link: https://pypi.org/project/mkdocs-material/
-    # - icon: fontawesome/brands/twitter
-    #   link: https://twitter.com/squidfunk
 
 # Extensions
 markdown_extensions:
@@ -129,3 +121,33 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Page tree
+nav:
+  - Kotlin:
+      - Kotlin Overview: kotlin/overview.md
+      - Basic Syntax:
+          - 주석(comments): kotlin/basic-syntax/comments.md
+          - 변수(val, var): kotlin/basic-syntax/variable.md
+  - Git:
+      - Git Overview: git/overview.md
+  - Android:
+      - Android Overview: android/overview.md
+  - Spring Boot:
+      - Spring Boot Overview: spring-boot/overview.md
+  - Mac:
+      - Mac Overview: mac/overview.md
+      - Alfred: mac/alfred.md
+      - zsh:
+          - Homebrew Installation: mac/zsh/homebrew-installation.md
+          - iTerm2 Installation: mac/zsh/iterm2-installation.md
+          - Oh My Posh Installation: mac/zsh/oh-my-posh-installation.md
+  - Windows:
+      - Windows Overview: windows/overview.md
+      - Powertoys: windows/powertoys.md
+      - WSL:
+          - WSL Overview: windows/wsl/overview.md
+          - Installation: windows/wsl/installation.md
+          - Homebrew Installation: windows/wsl/homebrew-installation.md
+          - Oh My Posh Installation: windows/wsl/oh-my-posh-installation.md
+  - Material Mkdocs:
+      - Material Mkdocs Overview: material-mkdocs/overview.md
+      - Imoji
