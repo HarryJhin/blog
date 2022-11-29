@@ -125,6 +125,7 @@ nav:
   - Kotlin:
       - Overview: kotlin/overview.md
       - Basic Syntax:
+          - 시작 함수(entry point): kotlin/basic-syntax/entry-point.md
           - 주석(comments): kotlin/basic-syntax/comments.md
           - 변수(val, var): kotlin/basic-syntax/variable.md
   - Git:
@@ -151,7 +152,9 @@ nav:
           - Oh My Posh Installation: mac/zsh/oh-my-posh-installation.md
   - Windows:
       - Overview: windows/overview.md
-      - Powertoys: windows/powertoys.md
+      - Powertoys:
+          - Overview: windows/powertoys/overview.md
+          - Installation: windows/powertoys/installation.md
       - Powershell:
           - Overview: windows/powershell/overview.md
       - Winget:
@@ -164,4 +167,5 @@ nav:
           - Oh My Posh Installation: windows/wsl/oh-my-posh-installation.md
   - Material Mkdocs:
       - Overview: material-mkdocs/overview.md
+      - Buttons: material-mkdocs/buttons.md
       - Icon, Imoji: material-mkdocs/icon-imoji.md
