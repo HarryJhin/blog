@@ -1,7 +1,4 @@
 ---
-title: 주석
-description: >-
-    코틀린에서 주석을 다는 방법에 대해 소개합니다.
 comments: true
 ---
 

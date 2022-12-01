@@ -58,6 +58,8 @@ a = 1 // 에러: String 변수에 Int 값을 대입할 수 없습니다.
 
 `val` 키워드로 선언된 변수는 불변(immutable)입니다.
 
+따라서 읽기 전용(Read-Only) 변수라고 부르기도 합니다.
+
 ```kotlin
 val b = "불변 변수"
 ```
@@ -66,6 +68,18 @@ val b = "불변 변수"
 
 ```kotlin
 val b: String // 컴파일 에러
+```
+
+## 최상위 변수
+
+최상위에 변수를 선언할 수 있고, 이 변수는 어느 곳에서나 접근 가능합니다.
+
+```kotlin
+val PI = 3.14
+
+fun printPI() {
+    println(PI)
+}
 ```
 
 [^1]:

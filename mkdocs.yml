@@ -125,9 +125,15 @@ nav:
   - Kotlin:
       - Overview: kotlin/overview.md
       - Basic Syntax:
-          - 시작 함수(entry point): kotlin/basic-syntax/entry-point.md
-          - 주석(comments): kotlin/basic-syntax/comments.md
-          - 변수(val, var): kotlin/basic-syntax/variable.md
+          - 진입점: kotlin/basic-syntax/entry-point.md
+          - 주석: kotlin/basic-syntax/comments.md
+          - 함수: kotlin/basic-syntax/functions.md
+          - 변수: kotlin/basic-syntax/variables.md
+          - 클래스: kotlin/basic-syntax/classes.md
+          - 조건문: kotlin/basic-syntax/conditional-expression.md
+          - 반복문: kotlin/basic-syntax/loop.md
+          - 범위: kotlin/basic-syntax/range.md
+          - 컬렉션: kotlin/basic-syntax/collections.md
   - Git:
       - Overview: git/overview.md
   - Android:
@@ -135,12 +141,20 @@ nav:
       - Hilt:
           - Overview: android/hilt/overview.md
           - Setup: android/hilt/setup.md
-      - Jetpack Compose:
-          - Overview: android/jetpack-compose/overview.md
-          - Material:
-              - Overview: android/jetpack-compose/material/overview.md
-              - Component:
-                  - Button: android/jetpack-compose/material/button.md
+      - Jetpack:
+          - Data Layer:
+              - Datastore:
+                  - Proto Datastore: android/jetpack/data/datastore/proto-datastore.md
+              - Database(ROOM):
+                  - Overview: android/jetpack/data/room/overview.md
+              - WorkManager:
+                  - Overview: android/jetpack/data/workmanager/overview.md
+          - Compose:
+              - Overview: android/jetpack/compose/overview.md
+              - Material:
+                  - Overview: android/jetpack/compose/material/overview.md
+                  - Component:
+                      - Button: android/jetpack/compose/material/button.md
   - Spring Boot:
       - Overview: spring-boot/overview.md
   - Mac:
