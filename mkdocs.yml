@@ -14,7 +14,7 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    # - announce.dismiss
+    - announce.dismiss
     - content.code.annotate
     - content.tabs.link
     - content.tooltips
@@ -124,7 +124,7 @@ markdown_extensions:
 nav:
   - Kotlin:
       - Overview: kotlin/overview.md
-      - Basic Syntax:
+      - 기본 문법:
           - 진입점: kotlin/basic-syntax/entry-point.md
           - 주석: kotlin/basic-syntax/comments.md
           - 함수: kotlin/basic-syntax/functions.md
@@ -135,7 +135,9 @@ nav:
           - 범위: kotlin/basic-syntax/range.md
           - 컬렉션: kotlin/basic-syntax/collections.md
   - Git:
-      - Overview: git/overview.md
+      - 개요: git/overview.md
+      - 설정: git/setup.md
+      - 리포지토리 생성: git/init.md
   - Android:
       - Overview: android/overview.md
       - Hilt:
@@ -160,6 +162,8 @@ nav:
   - Mac:
       - Overview: mac/overview.md
       - Alfred: mac/alfred.md
+      - MacPorts: mac/macports.md
+      - Homebrew: mac/homebrew.md
       - zsh:
           - Homebrew Installation: mac/zsh/homebrew-installation.md
           - iTerm2 Installation: mac/zsh/iterm2-installation.md
