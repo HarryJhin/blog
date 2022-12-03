@@ -19,9 +19,9 @@ theme:
     - content.tabs.link
     - content.tooltips
     # - header.autohide
-    # - navigation.expand
+    - navigation.expand
     - navigation.indexes
-    # - navigation.instant
+    - navigation.instant
     # - navigation.prune
     - navigation.sections
     - navigation.tabs
@@ -32,7 +32,7 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    - toc.integrate
   palette:
     - scheme: default
       primary: indigo
