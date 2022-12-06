@@ -12,6 +12,14 @@ fun main() {
 }
 ```
 
+실행할 때 매개 변수를 입력 받을 수 있습니다.
+
+```kotlin
+fun main(args: Array<String>) {
+    println(args.contentToString())
+}
+```
+
 !!! tip "Java와 다른점"
 
     Java 파일의 시작점도 같은 `main()` 메서드입니다.
