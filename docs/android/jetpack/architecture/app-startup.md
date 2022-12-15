@@ -30,9 +30,9 @@ App Startup 라이브러리는 애플리케이션 시작 시 구성 요소를 �
 
 특정 케이스에서 앱이 시작될 때 즉시 초기화되는 컴포넌트에 의존합니다.
 
-콘텐츠 제공자를 사용하여 각 종속성을 초기화한다면 위 요구사항을 충족시킬 수 있기는 합니다. 하지만 콘텐츠 제공자는 인스턴스화하는 데 비용이 많이 들고 앱의 시작 시퀀스가 불필요하게 늦춰질 수 있습니다. 또한 안드로이드는 콘텐츠 제공자를 초기화하는 데 순서를 지키지 않습니다.
+콘텐츠 제공자를 사용하여 각 의존성을 초기화한다면 위 요구사항을 충족시킬 수 있기는 합니다. 하지만 콘텐츠 제공자는 인스턴스화하는 데 비용이 많이 들고 앱의 시작 시퀀스가 불필요하게 늦춰질 수 있습니다. 또한 안드로이드는 콘텐츠 제공자를 초기화하는 데 순서를 지키지 않습니다.
 
-따라서 App Startup은 앱 시작 시 컴포넌트를 초기화하고 해당 종속성을 명시적으로 정의하는 보다 효율적인 방법을 제공합니다.
+따라서 App Startup은 앱 시작 시 컴포넌트를 초기화하고 해당 의존성을 명시적으로 정의하는 보다 효율적인 방법을 제공합니다.
 
 App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하려면 앱이 초기화해야 하는 각 컴포넌트에 대해 초기화 프로그램을 정의해야 합니다.
 
@@ -86,7 +86,7 @@ App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하
 
 `WorkManager`가 다른 라이브러리에 의존하지 않기 때문에 `dependencies()` 함수에서 빈 리스트를 반환합니다.
 
-만약 `WorkManager`에 종속된 `ExampleLogger`가 있다면, 이 종속성은 `App Startup`이 `WorkManager`를 먼저 초기화하는지 확인해야 합니다. 따라서 다음과 같이 구현됩니다:
+만약 `WorkManager`에 의존적인 `ExampleLogger`가 있다면, 이 의존성은 `App Startup`이 `WorkManager`를 먼저 초기화하는지 확인해야 합니다. 따라서 다음과 같이 구현됩니다:
 
 === "Java"
 
@@ -139,7 +139,7 @@ App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하
 
 `App Startup`에는 컴포넌트 이니셜라이저를 검색하고 호출하는 데 사용하는 `InitializationProvider`라는 특수한 콘텐츠 공급자가 포함되어 있습니다.
 `App Startup`은 먼저 `InitializationProvider` 매니페스트 항목 아래의 `<meta-data>` 항목을 확인하여 컴포넌트 이니셜라이저를 검색합니다.
-그런 다음 `App Startup`은 이미 발견한 초기화 프로그램에 대해 `dependencies()` 메서드를 호출하여 종속성을 확인합니다.
+그런 다음 `App Startup`은 이미 발견한 초기화 프로그램에 대해 `dependencies()` 메서드를 호출하여 의존성을 확인합니다.
 
 즉, `App Startup`에서 컴포넌트 이니셜라이저를 검색할 수 있으려면 다음 조건 중 하나를 충족해야 합니다:
 
@@ -194,13 +194,13 @@ App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하
 
 !!!warning
 
-    **주의**: 컴포넌트에 대한 자동 초기화를 비활성화하면 해당 컴포넌트의 종속성에 대한 자동 초기화도 비활성화됩니다.
+    **주의**: 컴포넌트에 대한 자동 초기화를 비활성화하면 해당 컴포넌트의 의존성에 대한 자동 초기화도 비활성화됩니다.
 
 ### 모든 컴포넌트 자동 초기화 비활성화
 
 모든 자동 초기화를 비활성화하려면 매니페스트에서 `InitializationProvider`에 대한 전체 항목을 제거합니다.
 
-```xml title="AndroidManifest.xml"
+```xml title="AndroidManifest.xml"속
 <provider
     android:name="androidx.startup.InitializationProvider"
     android:authorities="${applicationId}.androidx-startup"
@@ -209,7 +209,7 @@ App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하
 
 ### 수동으로 컴포넌트 initializers 호출
 
-컴포넌트에 대해 자동 초기화가 비활성화된 경우 `AppInitializer`를 사용하여 해당 컴포넌트와 해당 종속성을 수동으로 초기화할 수 있습니다.
+컴포넌트에 대해 자동 초기화가 비활성화된 경우 `AppInitializer`를 사용하여 해당 컴포넌트와 해당 의성을 수동으로 초기화할 수 있습니다.
 
 예를 들어 수동으로 `ExampleLogger`를 초기화하는 방법입니다:
 
@@ -227,4 +227,4 @@ App Startup을 사용하여 시작 시 자동으로 컴포넌트를 초기화하
         .initializeComponent(ExampleLoggerInitializer::class.java)
     ```
 
-결과적으로 `WorkManager`는 `ExampleLogger`의 종속 항목이므로 `App Startup`도 `WorkManager`를 초기화합니다.
+결과적으로 `WorkManager`는 `ExampleLogger`의 의존 항목이므로 `App Startup`도 `WorkManager`를 초기화합니다.
