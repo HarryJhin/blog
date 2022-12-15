@@ -142,12 +142,16 @@ nav:
           - 반복문: kotlin/basic/loop.md
           - 범위: kotlin/basic/range.md
           - 컬렉션: kotlin/basic/collections.md
+      - 개념:
+          - 원시 데이터 타입: kotlin/concepts/primitive-data-type.md
   - Android:
       - Overview: android/overview.md
       - Hilt:
           - Overview: android/hilt/overview.md
           - Setup: android/hilt/setup.md
       - Jetpack:
+          - 아키텍처:
+              - App Startup: android/jetpack/architecture/app-startup.md
           - Data Layer:
               - Datastore:
                   - Proto Datastore: android/jetpack/data/datastore/proto-datastore.md
