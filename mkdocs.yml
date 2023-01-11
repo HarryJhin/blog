@@ -175,15 +175,15 @@ nav:
               # - Button: android/jetpack/compose/material/button.md
   # - Spring Boot:
   #     - Overview: spring-boot/overview.md
-  - Mac:
-      - Overview: mac/overview.md
-      - Alfred: mac/alfred.md
-      - MacPorts: mac/macports.md
-      - Homebrew: mac/homebrew.md
-      - zsh:
-          - Homebrew Installation: mac/zsh/homebrew-installation.md
-          - iTerm2 Installation: mac/zsh/iterm2-installation.md
-          - Oh My Posh Installation: mac/zsh/oh-my-posh-installation.md
+  # - Mac:
+  #     - Overview: mac/overview.md
+  # - Alfred: mac/alfred.md
+  # - MacPorts: mac/macports.md
+  # - Homebrew: mac/homebrew.md
+  # - zsh:
+  # - Homebrew Installation: mac/zsh/homebrew-installation.md
+  # - iTerm2 Installation: mac/zsh/iterm2-installation.md
+  # - Oh My Posh Installation: mac/zsh/oh-my-posh-installation.md
   - Windows:
       - Overview: windows/overview.md
       - Powertoys:
@@ -194,12 +194,12 @@ nav:
       - Winget:
           - Overview: windows/winget/overview.md
           - Installation: windows/winget/installation.md
-      - WSL:
-          - Overview: windows/wsl/overview.md
-          - Installation: windows/wsl/installation.md
-          - Homebrew Installation: windows/wsl/homebrew-installation.md
-          - Oh My Posh Installation: windows/wsl/oh-my-posh-installation.md
+      # - WSL:
+      #     - Overview: windows/wsl/overview.md
+      #     - Installation: windows/wsl/installation.md
+      #     - Homebrew Installation: windows/wsl/homebrew-installation.md
+      #     - Oh My Posh Installation: windows/wsl/oh-my-posh-installation.md
   - Material Mkdocs:
       - Overview: material-mkdocs/overview.md
       - Buttons: material-mkdocs/buttons.md
-      - Icon, Imoji: material-mkdocs/icon-imoji.md
+      # - Icon, Imoji: material-mkdocs/icon-imoji.md
