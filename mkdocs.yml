@@ -134,14 +134,14 @@ nav:
       - Overview: kotlin/overview.md
       - 기본:
           - 진입점: kotlin/basic/entry-point.md
-          - 주석: kotlin/basic/comments.md
-          - 함수: kotlin/basic/functions.md
-          - 변수: kotlin/basic/variables.md
-          - 클래스: kotlin/basic/classes.md
-          - 조건문: kotlin/basic/conditional-expression.md
-          - 반복문: kotlin/basic/loop.md
-          - 범위: kotlin/basic/range.md
-          - 컬렉션: kotlin/basic/collections.md
+          # - 주석: kotlin/basic/comments.md
+          # - 함수: kotlin/basic/functions.md
+          # - 변수: kotlin/basic/variables.md
+          # - 클래스: kotlin/basic/classes.md
+          # - 조건문: kotlin/basic/conditional-expression.md
+          # - 반복문: kotlin/basic/loop.md
+          # - 범위: kotlin/basic/range.md
+          # - 컬렉션: kotlin/basic/collections.md
       - 개념:
           - 원시 데이터 타입: kotlin/concepts/primitive-data-type.md
   - Android:
@@ -169,10 +169,10 @@ nav:
                   - 수명 주기: android/jetpack/compose/basic/lifecycle.md
                   - 부수 효과: android/jetpack/compose/basic/side-effects.md
                   - 단계: android/jetpack/compose/basic/phases.md
-              - Material:
-                  - Overview: android/jetpack/compose/material/overview.md
-                  - Component:
-                      - Button: android/jetpack/compose/material/button.md
+              # - Material:
+              # - Overview: android/jetpack/compose/material/overview.md
+              # - Component:
+              # - Button: android/jetpack/compose/material/button.md
   # - Spring Boot:
   #     - Overview: spring-boot/overview.md
   - Mac:
