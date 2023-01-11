@@ -146,6 +146,8 @@ nav:
           - 원시 데이터 타입: kotlin/concepts/primitive-data-type.md
   - Android:
       - Overview: android/overview.md
+      - 고급:
+          - 로깅: android/advanced/logging.md
       - Hilt:
           - Overview: android/hilt/overview.md
           - Setup: android/hilt/setup.md
