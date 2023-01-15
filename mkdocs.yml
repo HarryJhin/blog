@@ -10,7 +10,7 @@ repo_url: https://github.com/harryjhin/blog
 
 # Configuration
 theme:
-  language: kr
+  language: ko
   name: material
   custom_dir: overrides
   features:
@@ -122,7 +122,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-  - Git:
+  - 깃:
       - 개요: git/overview.md
       - 설정: git/setup.md
       - 리포지토리 생성: git/init.md
