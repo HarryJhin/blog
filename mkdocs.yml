@@ -18,6 +18,9 @@ theme:
     - content.code.annotate
     - content.tabs.link
     - content.tooltips
+    - content.code.copy
+    - content.action.edit
+    - content.action.view
     # - header.autohide
     - navigation.expand
     - navigation.indexes
@@ -82,10 +85,16 @@ extra:
 
 # Extensions
 markdown_extensions:
-  - abbr
+  # 주의사항 (https://squidfunk.github.io/mkdocs-material/reference/admonitions/)
   - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - abbr
   - attr_list
-  - def_list
   - footnotes
   - md_in_html
   - toc:
@@ -95,7 +104,6 @@ markdown_extensions:
   - pymdownx.betterem:
       smart_enable: all
   - pymdownx.caret
-  - pymdownx.details
   - pymdownx.emoji:
       emoji_generator: !!python/name:materialx.emoji.to_svg
       emoji_index: !!python/name:materialx.emoji.twemoji
@@ -109,15 +117,13 @@ markdown_extensions:
       repo: mkdocs-material
   - pymdownx.mark
   - pymdownx.smartsymbols
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
+  # https://squidfunk.github.io/mkdocs-material/reference/lists/
+  - def_list
   - pymdownx.tasklist:
       custom_checkbox: true
+
   - pymdownx.tilde
 
 # Page tree
@@ -130,7 +136,7 @@ nav:
       - 변경 사항 되돌리기: git/checkout.md
       - 스테이지 취소하기: git/stage-reset.md
       - 커밋 되돌리기: git/commit-reset.md
-  - Kotlin:
+  - 코틀린:
       - Overview: kotlin/overview.md
       - 기본:
           - 진입점: kotlin/basic/entry-point.md
@@ -144,7 +150,7 @@ nav:
           # - 컬렉션: kotlin/basic/collections.md
       - 개념:
           - 원시 데이터 타입: kotlin/concepts/primitive-data-type.md
-  - Android:
+  - 안드로이드:
       - Overview: android/overview.md
       - 고급:
           - 로깅: android/advanced/logging.md
@@ -173,6 +179,13 @@ nav:
               # - Overview: android/jetpack/compose/material/overview.md
               # - Component:
               # - Button: android/jetpack/compose/material/button.md
+  - JPA:
+      - jpa/jpa-overview.md
+      - 기본:
+          - 영속성 컨텍스트: jpa/basic/persistence-context.md
+          - 엔티티 매핑: jpa/basic/entity-mapping.md
+          - 연관관계: jpa/basic/relation.md
+          - 프록시: jpa/basic/proxy.md
   # - Spring Boot:
   #     - Overview: spring-boot/overview.md
   # - Mac:
