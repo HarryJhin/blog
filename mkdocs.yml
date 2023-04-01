@@ -21,21 +21,22 @@ theme:
     - content.code.copy
     - content.action.edit
     - content.action.view
-    # - header.autohide
-    - navigation.expand
-    - navigation.indexes
+    - header.autohide
     - navigation.instant
-    # - navigation.prune
-    - navigation.sections
+    - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    # - navigation.path # Sponsors only
+    # - navigation.prune # Sponsors only
+    - navigation.indexes
+    - toc.follow
+    - toc.integrate
     - navigation.top
-    - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
-    - toc.follow
-    # - toc.integrate
   palette:
     - scheme: default
       primary: indigo
