@@ -152,6 +152,8 @@ nav:
           # - 컬렉션: kotlin/basic/collections.md
       - 개념:
           - 원시 데이터 타입: kotlin/concepts/primitive-data-type.md
+      - 기타:
+          - Kotlin을 위한 editorconfig 구성: kotlin/기타/editorconfig.md
   - 안드로이드:
       - Overview: android/overview.md
       - 고급:
