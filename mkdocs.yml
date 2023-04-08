@@ -223,3 +223,5 @@ nav:
       # - Icon, Imoji: material-mkdocs/icon-imoji.md
   - 산업기능요원:
       - 산업기능요원/index.md
+      - 산업기능요원/군사교육소집.md
+      - 산업기능요원/휴가와_병가.md
