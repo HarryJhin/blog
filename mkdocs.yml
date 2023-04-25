@@ -163,6 +163,7 @@ nav:
           - 의존성 주입: android/hilt/overview.md
           - 의존성 주입 with Hilt: android/hilt/setup.md
           - WorkManager: android/hilt/workmanager.md
+          - 싱글톤: android/hilt/singleton.md
       - Jetpack:
           - 아키텍처:
               - App Startup: android/jetpack/architecture/app-startup.md
